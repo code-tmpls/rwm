@@ -7,6 +7,7 @@ import pos from '@Pages/English/pos/index.js';
 import Tense from '@Pages/English/tense/index.js';
 import voices from "@Pages/English/voices/index.js";
 import clausesPhrases from "@Pages/English/clausesPhrases/index.js";
+import Profile from "@Pages/Profile/index.js";
 
 const url = UrlParams().baseUrl;
 
@@ -59,7 +60,9 @@ const Menu = () => {
                 </Col>
             </Row>
           </Col>
-          <Col xl={3} xxl={3}></Col>
+          <Col xl={3} xxl={3}>
+                <Profile />
+          </Col>
         </Row>
       </ContainerFluid>
     </>
