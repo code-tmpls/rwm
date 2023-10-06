@@ -18,7 +18,7 @@ function generate(){
  $.ajax({url: "generate.php", data:{ tts: tts, lang:lang }, success: function(result){
 	 console.log(result);
 	let content='<audio controls>';
-		content+='<source src="http://localhost/tts/out/output.mp3" type="audio/mpeg">';
+		content+='<source src="http://localhost/projects/rwm/tts/out/output.mp3" type="audio/mpeg">';
 		content+='</audio>';
     $("#output").html(content);
   }});
